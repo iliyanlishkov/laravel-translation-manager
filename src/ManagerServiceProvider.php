@@ -98,7 +98,7 @@ class ManagerServiceProvider extends ServiceProvider {
         $viewPath = __DIR__.'/../resources/views';
         $this->loadViewsFrom($viewPath, 'translation-manager');
         $this->publishes([
-            $viewPath => resource_path('assets/views/vendor/translation-manager'),
+            $viewPath => base_path('resources/views/vendor/translation-manager'),
         ], 'views');
     }
 
